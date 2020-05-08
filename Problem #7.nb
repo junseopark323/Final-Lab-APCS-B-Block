@@ -1,0 +1,111 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='WolframDesktop 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       161,          7]
+NotebookDataLength[      3265,        101]
+NotebookOptionsPosition[      2292,         74]
+NotebookOutlinePosition[      2628,         89]
+CellTagsIndexPosition[      2585,         86]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["1. Create a list of numbers from 1 to 1,000,000", "Section",
+ CellChangeTimes->{{3.797685041294676*^9, 
+  3.7976850875817127`*^9}},ExpressionUUID->"0b5da449-a217-4cd5-b7c1-\
+40a5d20624d0"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"numberslist", "=", 
+   RowBox[{"Range", "[", "1000000", "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.797684976847211*^9, 3.797684987170004*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"a750b9b5-cb9b-476b-8a6f-bee54f1412af"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["2. Select prime numbers from this list of numbers", "Section",
+ CellChangeTimes->{{3.7976850678813562`*^9, 
+  3.797685083447297*^9}},ExpressionUUID->"9523bb81-d50c-42ab-a90b-\
+12585a9326fa"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"primes", "=", 
+   RowBox[{"Select", "[", 
+    RowBox[{"numberslist", ",", 
+     RowBox[{
+      RowBox[{"PrimeQ", "[", "#", "]"}], "&"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.797684988781142*^9, 3.797685002445244*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"ccaec9c7-20e8-426c-b818-7734283f8736"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["3. Find the 10001th term in the list of prime numbers", "Section",
+ CellChangeTimes->{{3.79768508964474*^9, 
+  3.797685100318012*^9}},ExpressionUUID->"49278fcb-7c5a-4ad5-a405-\
+6e196faa8722"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"primes", "[", 
+  RowBox[{"[", "10001", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.797685003515172*^9, 3.797685009571309*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"1a48198a-7015-4e46-8e21-6e27cf3ad4f7"],
+
+Cell[BoxData["104743"], "Output",
+ CellChangeTimes->{3.797685010121812*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"4af9ea0d-663c-4817-b556-ab12a238953f"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{770, 836},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (April 11, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[583, 22, 194, 3, 67, "Section",ExpressionUUID->"0b5da449-a217-4cd5-b7c1-40a5d20624d0"],
+Cell[780, 27, 260, 5, 30, "Input",ExpressionUUID->"a750b9b5-cb9b-476b-8a6f-bee54f1412af"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1077, 37, 196, 3, 67, "Section",ExpressionUUID->"9523bb81-d50c-42ab-a90b-12585a9326fa"],
+Cell[1276, 42, 343, 8, 30, "Input",ExpressionUUID->"ccaec9c7-20e8-426c-b818-7734283f8736"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1656, 55, 197, 3, 67, "Section",ExpressionUUID->"49278fcb-7c5a-4ad5-a405-6e196faa8722"],
+Cell[CellGroupData[{
+Cell[1878, 62, 230, 4, 30, "Input",ExpressionUUID->"1a48198a-7015-4e46-8e21-6e27cf3ad4f7"],
+Cell[2111, 68, 153, 2, 34, "Output",ExpressionUUID->"4af9ea0d-663c-4817-b556-ab12a238953f"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
